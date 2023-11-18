@@ -3,6 +3,7 @@ package org.restAssured.tests;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
+import org.restAssured.utils.ExcelReader;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -27,5 +28,10 @@ public class DemoTest {
                 when().
                 post().
                 then().log().all().statusCode(200);
+    }
+    @Test(dataProvider = "getData",dataProviderClass = ExcelReader.class)
+    public void testDemoExcelRead(String baseURL,String createBooking){
+        System.out.println("Base URL is : " + baseURL);
+        System.out.println("Create Booking path is : " + createBooking);
     }
 }

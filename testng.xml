@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test name="RestAssuredFrameworkDevelopment">
         <classes>
-            <class name="org.restAssured.tests.DemoTest"></class>
+            <class name="org.restAssured.tests.TC_Integration"/>
         </classes>
     </test>
 </suite>
