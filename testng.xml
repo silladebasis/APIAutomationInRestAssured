@@ -4,6 +4,7 @@
     <test name="RestAssuredFrameworkDevelopment">
         <classes>
             <class name="org.restAssured.tests.TC_Integration"/>
+            <class name="org.restAssured.tests.TC_CreateBooking"/>
         </classes>
     </test>
 </suite>
